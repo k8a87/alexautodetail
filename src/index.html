@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Auto</title>
+    <link rel="stylesheet" href="./assets/scss/main.scss" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+
+    <style></style>
+  </head>
+  <body
+    class=""
+    style="position: relative"
+    data-bs-spy="scroll"
+    data-bs-target="#navTop"
+  >
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-black sticky-top"
+      id="navTop"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="/images/alexautologo.png" alt="" width="100px" />
+        </a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                href="#"
+                role="button"
+                aria-expanded="false"
+                >Services</a
+              >
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item" href="#regular">Regular wash</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#deep">Deep clean</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#maintenance"
+                    >Maintenance clean</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Offers and Updates</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="bg-black">
+      <div class="container-md">
+        <div
+          class="row align-items-center justify-content-center text-center text-md-start"
+        >
+          <div class="col-md-5 col-lg-5 text-primary">
+            <h1>Alex Auto Detailing</h1>
+            <p class="lead d-none d-md-block">
+              PROFESSIONAL CAR DETAILING SERVICES
+            </p>
+            <button class="btn d-none d-md-block btn-primary">
+              Get a Quote
+            </button>
+          </div>
+          <div class="col-md-7 col-lg-7">
+            <img
+              src="/images/alexautologo.png"
+              class="img-fluid rounded-circle"
+              alt=""
+            />
+            <!-- <button class="btn btn-outline-primary d-md-none mt-0">
+              Get a Quote
+            </button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="callCard" class="pb-5">
+      <div class="container overlay">
+        <div class="card-group justify-content-center">
+          <div class="card bg-light border-2 border-primary shadow-lg">
+            <div class="card-header">Posted on May 26, 2022</div>
+            <div class="card-body">
+              <h5 class="card-title">
+                Did you know that for the right cleaning you need the right
+                technique?
+              </h5>
+              <p class="card-text">
+                We always look to improve the quality of our services so this is
+                why we are using best products on the market and always the
+                right technique...
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary">Read more</a>
+            </div>
+          </div>
+
+          <div class="card bg-light border-2 border-primary shadow-lg">
+            <div class="card-header">Posted on April 7, 2022</div>
+            <div class="card-body">
+              <h5 class="card-title">Sunny days are coming!</h5>
+              <p class="card-text">
+                So why not taking care of your beauty by booking it in for a
+                full treatment! <br /><br />
+                <span class="badge bg-danger">50% off</span> until end of April
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary">Read more</a>
+            </div>
+          </div>
+
+          <div class="card bg-light border-2 border-primary shadow-lg">
+            <div class="card-header">Posted on May 26, 2022</div>
+            <div class="card-body">
+              <h5 class="card-title">Winter is coming 🥶</h5>
+              <p class="card-text">
+                Why not preparing your car for winter? <br /><br />
+                <span class="badge bg-danger">50% off</span> this month for your
+                first full detail
+              </p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-outline-primary">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="text-center text-light pt-3 pb-2 mb-3 bg-primary bg-gradient">
+        <h2>Services</h2>
+        <p class="lead">Top quality detailing services</p>
+      </div>
+      <!-- First card -->
+      <section id="regular">
+        <div class="container-sm">
+          <div class="card h-100 shadow mb-5">
+            <div class="card-header text-center bg-primary text-light py-3">
+              Regular wash
+            </div>
+
+            <div class="row justify-content-center align-items-center bg-light">
+              <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5">
+                <div class="card-body ps-md-5">
+                  <h5 class="card-title">Standard clean inside and out</h5>
+                  <ul class="card-text pt-3 pt-lg-4">
+                    <li>Vacuumed</li>
+                    <li>Dashboard and centre console cleaned</li>
+                    <li>Seats, carpet, mats and boot cleaned</li>
+                    <li>Pre wash with snow foam</li>
+                    <li>2 bucket method safe wash</li>
+                    <li>Windows cleaned in and out</li>
+                    <li>Wheels cleaned</li>
+                    <li>Tyres dressed</li>
+                    <li>Hand dry with premium towels</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-10 col-md-6 col-lg-7">
+                <div class="text-primary text-center">
+                  <div
+                    class="row row-cols-1 row-cols-md-3 justify-content-around align-items-end border-bottom"
+                  >
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-3x"></i>
+                      <p>Small / 1hr 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£65</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-4x"></i>
+                      <p>Medium / 2hrs</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£75</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-5x"></i>
+                      <p>SUV / 2hrs 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£85</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Second card -->
+      <section id="deep">
+        <div class="container-sm">
+          <div class="card h-100 shadow mb-5">
+            <div class="card-header text-center bg-primary text-light py-3">
+              Deep clean
+            </div>
+
+            <div class="row justify-content-center align-items-start bg-light">
+              <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5">
+                <div class="card-body ps-md-5">
+                  <h5 class="card-title">Full deep clean inside and out</h5>
+                  <ul class="card-text pt-3">
+                    <p>Interior</p>
+                    <li>Vacuumed</li>
+                    <li>All interior shampooed and seats extracted</li>
+                    <li>Leather treatment ( clean and protect )</li>
+                    <li>Centre console and dashboard cleaned and protected</li>
+                    <li>Pet hair removed</li>
+                    <li>Vents deep cleaned with steam</li>
+                    <li>
+                      Gearshift, arm rest, pedals and steering wheel cleaned
+                      with steam
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-10 col-md-6">
+                <div class="card-body ps-md-5 pb-5">
+                  <ul class="card-text mt-md-5">
+                    <p>Exterior</p>
+                    <li>Door shuts and jambs cleaned</li>
+                    <li>Headliner cleaned</li>
+                    <li>Boot deep cleaned</li>
+                    <li>Pre rinse with citrus and snow foam</li>
+                    <li>Wheels deep cleaned with non acidic cleaner</li>
+                    <li>Tyres and arches deep cleaned</li>
+                    <li>2 bucket method safe wash</li>
+                    <li>
+                      Grills, badges and window crevices cleaned with a soft
+                      brush
+                    </li>
+                    <li>Exhaust tips polished and cleaned</li>
+                    <li>
+                      Hand dry with luxurious microfibres towels + blow dry
+                    </li>
+                    <li>Windows cleaned</li>
+                    <li>3-5 months paint protection</li>
+                    <li>Tyres dressed</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="text-primary text-center">
+                  <div
+                    class="row row-cols-1 row-cols-md-3 justify-content-around align-items-end border-bottom"
+                  >
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-3x"></i>
+                      <p>Small / 2hr 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£120</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-4x"></i>
+                      <p>Medium / 3hrs 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£140</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-5x"></i>
+                      <p>SUV / 3-5hrs</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£180</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Maintenance card -->
+      <section id="maintenance">
+        <div class="container-sm">
+          <div class="card h-100 shadow mb-5">
+            <div class="card-header text-center bg-primary text-light py-3">
+              Maintenance wash <br />
+              (for customers who have already received our full deep clean)
+            </div>
+
+            <div class="row justify-content-center align-items-center bg-light">
+              <div class="col-10 col-md-6 py-3 ps-md-5">
+                <div class="card-body ps-md-5">
+                  <h5 class="card-title">
+                    Everything from the regular wash plus:
+                  </h5>
+                  <ul class="card-text pt-3 pt-lg-4">
+                    <li>Removing stains</li>
+                    <li>Steering wheel and pedals cleaned</li>
+                    <li>Leather cleaned</li>
+                    <li>Cleaning door jambs and shuts</li>
+                    <li>Citrus pre wash</li>
+                    <li>Wheels and tyres deep cleaned with various brushes</li>
+                    <li>Arches cleaned</li>
+                    <li>
+                      Quick detailer for topping up the protection and enhance
+                      gloss
+                    </li>
+                    <li>Clean exhaust tips</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-10 col-md-6">
+                <div class="text-primary text-center">
+                  <div
+                    class="row row-cols-1 row-cols-md-3 justify-content-around align-items-end border-bottom"
+                  >
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-3x"></i>
+                      <p>Small / 1hr 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£65</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-4x"></i>
+                      <p>Medium / 2hrs</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£75</span
+                      >
+                    </div>
+                    <div class="col col-md-4 py-3 py-md-0 border-bottom">
+                      <i class="fa fa-solid fa-car fa-5x"></i>
+                      <p>SUV / 2hrs 30mins</p>
+                      <span
+                        class="mb-md-5 badge bg-primary rounded-pill"
+                        style="font-size: 1rem"
+                        >£85</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="gallery">
+      <div class="text-center text-light bg-primary pt-3 pb-2 mb-3">
+        <h2>Gallery</h2>
+        <p class="lead">You can also find us on social media!</p>
+        <div class="row">
+          <span class="justify-content-center">
+            <i class="bi bi-facebook" style="font-size: 2rem"></i>
+            <i class="bi bi-instagram px-3" style="font-size: 2rem"></i>
+            <i class="bi bi-tiktok" style="font-size: 2rem"></i>
+          </span>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="/images/car-1744899.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/automobile-2178289.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="/images/mercedes-1229243.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="text-center text-light bg-primary pt-3 pb-2 mb-3">
+        <h2>Testimonials</h2>
+        <p class="lead">Our customer reviews!</p>
+      </div>
+      <div class="container-xxl w-75">
+        <div class="list-group shadow">
+          <a
+            href="https://www.google.com/search?hl=en-GB&gl=uk&q=Alex+Auto+Detailing,+Nathans+Rd,+Wembley+HA0+3RX&ludocid=13024342677853338603&lsig=AB86z5Uh_mO0JKyvG6_sQUiBT08F#lrd=0x487613b91918c18b:0xb4bfc2a8da687beb,1"
+            class="list-group-item list-group-item-action"
+            target="_blank"
+            aria-current="true"
+          >
+            <div class="d-sm-flex w-100 justify-content-between">
+              <h5 class="mb-1">Did a fantastic job with my car.</h5>
+
+              <small>2 months ago</small>
+            </div>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i>
+            <p class="mb-1 pt-3">
+              Alex showed great care and attention to detail and it’s clear he
+              has a passion for cars and what he does. Highly recommended for
+              anyone who wants a step up from the usual hand car wash outfits.
+            </p>
+            <small class="text-muted">So Shk</small>
+          </a>
+          <a
+            href="https://www.google.com/search?hl=en-GB&gl=uk&q=Alex+Auto+Detailing,+Nathans+Rd,+Wembley+HA0+3RX&ludocid=13024342677853338603&lsig=AB86z5Uh_mO0JKyvG6_sQUiBT08F#lrd=0x487613b91918c18b:0xb4bfc2a8da687beb,1"
+            class="list-group-item list-group-item-action"
+            target="_blank"
+            aria-current="true"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Good quality service received from Alex.</h5>
+              <small>10 months ago</small>
+            </div>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i>
+            <p class="mb-1 pt-3">
+              Our work van was a mess… to say at least… but he managed to make
+              it look and smell like a brand new one… would recommend without a
+              doubt
+            </p>
+            <small class="text-muted">Marius Verdes</small>
+          </a>
+          <a
+            href="https://www.google.com/search?hl=en-GB&gl=uk&q=Alex+Auto+Detailing,+Nathans+Rd,+Wembley+HA0+3RX&ludocid=13024342677853338603&lsig=AB86z5Uh_mO0JKyvG6_sQUiBT08F#lrd=0x487613b91918c18b:0xb4bfc2a8da687beb,1"
+            class="list-group-item list-group-item-action"
+            target="_blank"
+            aria-current="true"
+          >
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Alex went above and beyond to detail my car.</h5>
+              <small>10 months ago</small>
+            </div>
+            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+            ><i class="bi bi-star-fill"></i>
+            <p class="mb-1 pt-3">
+              His attention to detail is second to none. He'll go out of his way
+              to work with your schedule. I would highly recommend Alex to take
+              care of your prized possession!
+            </p>
+            <small class="text-muted">Michael Lieu</small>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="pt-5">
+      <div class="text-center text-light bg-primary pt-3 pb-2 mb-3">
+        <h2>Contact us</h2>
+      </div>
+      <div class="container py-5">
+        <div class="row row-cols-md-3 justify-content-center text-center">
+          <div class="col-md mb-3">
+            <i class="bi bi-geo-alt-fill" style="font-size: 5rem"></i>
+            <h3>Address</h3>
+            <a
+              href="https://www.google.com/maps/dir//Alex+Auto+Detailing/data=!4m8!4m7!1m0!1m5!1m1!1s0x487613b91918c18b:0xb4bfc2a8da687beb!2m2!1d-0.3096835!2d51.5707818"
+              target="_blank"
+              ><button class="btn btn-lg btn-outline-primary my-3">
+                Get directions
+              </button>
+            </a>
+            <p>
+              <span>
+                Nathans Road
+                <br />
+                Wembley
+                <br />
+                HA0 3RX
+                <br />
+                UK
+              </span>
+            </p>
+          </div>
+          <div class="col-md mb-3">
+            <i class="bi bi-blockquote-right" style="font-size: 5rem"></i>
+            <h3>Quote</h3>
+            <button class="btn btn-lg btn-outline-primary my-3">
+              Request a quote
+            </button>
+            <p>
+              <span>
+                Or send us an e-mail
+                <br />
+                <b>cardetailing@alexautodetailing.co.uk</b>
+              </span>
+            </p>
+          </div>
+          <div class="col-md mb-3">
+            <i class="bi bi-telephone-fill" style="font-size: 5rem"></i>
+            <h3>Call</h3>
+
+            <a href="tel:07772723332">
+              <button class="btn btn-lg btn-outline-primary my-3">
+                Call us now!
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/e25f9f83a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
