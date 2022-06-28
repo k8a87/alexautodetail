@@ -10,3 +10,9 @@ section {
 .title {
   font-family: "Kanit", sans-serif;
 }
+.nav--hidden {
+  transform: translateY(-500px);
+}
+.navbar {
+  transition: transform 0.5s;
+}
