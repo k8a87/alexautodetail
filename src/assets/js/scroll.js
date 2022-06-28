@@ -9,7 +9,7 @@ let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
     // goin down
-    // navEl.classList.add("nav--hidden");
+    navEl.classList.add("nav--hidden");
     // regularEl.classList.toggle("nav--scroll-margin");
     // deepEl.classList.toggle("nav--scroll-margin");
     // maintenanceEl.classList.toggle("nav--scroll-margin");
