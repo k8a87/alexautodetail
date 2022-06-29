@@ -1,33 +1,27 @@
+// Variables
 const navEl = document.querySelector(".navbar");
-const regularEl = document.getElementById("regular");
-const deepEl = document.getElementById("deep");
-const maintenanceEl = document.getElementById("maintenance");
-const galleryEl = document.getElementById("gallery");
-const testimonialEl = document.getElementById("testimonial");
+const navLinks = document.querySelectorAll(".clickToClose");
+
 let lastScrollY = window.scrollY;
 
+// loop through links to close with a delay to counteract the scroll up
+navLinks.forEach(i => {
+  i.addEventListener("click", () => {
+    setTimeout(() => {
+      navEl.classList.add("nav--hidden");
+    }, 750);
+  });
+});
+
+// Hide and show nav on scroll
 window.addEventListener("scroll", () => {
   if (lastScrollY < window.scrollY) {
-    // goin down
+    // goin down  to hide nav
     navEl.classList.add("nav--hidden");
-    regularEl.style.scrollMarginTop = "0rem";
-    deepEl.style.scrollMarginTop = "0rem";
-    maintenanceEl.style.scrollMarginTop = "0rem";
-    galleryEl.style.scrollMarginTop = "0rem";
-    testimonialEl.style.scrollMarginTop = "0rem";
-  } else {
-    //going up
+
+    //scroll back up to show nav
+  } else if (lastScrollY > window.scrollY) {
     navEl.classList.remove("nav--hidden");
-    regularEl.style.scrollMarginTop = "5.5rem";
-    deepEl.style.scrollMarginTop = "5.5rem";
-    maintenanceEl.style.scrollMarginTop = "5.5rem";
-    galleryEl.style.scrollMarginTop = "5.5rem";
-    testimonialEl.style.scrollMarginTop = "5.5rem";
-    // regularEl.classList.add("nav--scroll-margin");
-    // deepEl.classList.add("nav--scroll-margin");
-    // maintenanceEl.classList.add("nav--scroll-margin");
-    // galleryEl.classList.add("nav--scroll-margin");
-    // testimonialEl.classList.add("nav--scroll-margin");
   }
 
   lastScrollY = window.scrollY;
