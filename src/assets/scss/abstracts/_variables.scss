@@ -115,7 +115,10 @@ section {
     rgba(67, 45, 74, 1) 100%
   );
 }
+.contact-card {
+  transition: 0.25s ease-in-out;
+}
 
-.scale-up:hover {
+.contact-card:hover {
   transform: scale(1.05);
 }
