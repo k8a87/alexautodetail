@@ -1,4 +1,4 @@
-$primary: #7c2d96;
+$primary: #7f3299;
 
 .overlay {
   margin-top: -25px;
@@ -24,7 +24,7 @@ section {
 // Modify active colour
 
 .nav-link.active {
-  color: #d78bf0 !important;
+  color: #aa68c0 !important;
 }
 // Modify Nav burger
 
@@ -114,4 +114,8 @@ section {
     rgba(124, 45, 150, 1) 0%,
     rgba(67, 45, 74, 1) 100%
   );
+}
+
+.scale-up:hover {
+  transform: scale(1.05);
 }
