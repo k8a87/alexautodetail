@@ -1,4 +1,4 @@
-$primary: #7f3299;
+$primary: #7d2f97;
 
 .overlay {
   margin-top: -25px;
@@ -23,8 +23,15 @@ section {
 
 // Modify active colour
 
-.nav-link.active {
-  color: #aa68c0 !important;
+.nav-link.active,
+.nav-link:hover {
+  color: #e38eff !important;
+}
+
+// Modify link colour
+
+a.nav-link {
+  color: #aa68c0;
 }
 // Modify Nav burger
 
