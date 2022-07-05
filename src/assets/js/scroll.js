@@ -9,7 +9,7 @@ navLinks.forEach(i => {
   i.addEventListener("click", () => {
     setTimeout(() => {
       navEl.classList.add("nav--hidden");
-    }, 650);
+    }, 1000);
   });
 });
 
