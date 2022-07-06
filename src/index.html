@@ -132,7 +132,7 @@
   </section>
   <section id="services">
     <div class="text-center text-light pt-3 pb-2 mb-3 bg-primary bg-gradient">
-      <h2>Services</h2>
+      <h2>Services we offer</h2>
       <p class="lead">Top quality detailing services</p>
     </div>
     <!-- First card -->
@@ -329,7 +329,7 @@
   <section id="testimonial">
     <div class="text-center text-light bg-primary bg-gradient pt-3 pb-2 ">
       <h2>Testimonials</h2>
-      <p class="lead">Our customer reviews!</p>
+      <p class="lead">Here's what our customers say</p>
     </div>
     <div class="container w-75 py-4">
       <div class="list-group shadow">
@@ -405,7 +405,9 @@
             <h3>Quote</h3>
           </div>
           <div class="card-body">
-            <button class="btn btn-lg btn-outline-primary my-3"> Request a quote </button>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg btn-outline-primary my-3" data-bs-toggle="modal"
+              data-bs-target="#quoteModal"> Request a quote </button>
             <p class="">
               <span> Or send us an e-mail <br />
                 <b>cardetailing@ <br /> alexautodetailing.co.uk</b>
@@ -426,6 +428,44 @@
                 <b>07426 212882</b>
               </span>
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <section>
+    <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="quoteModalLabel">Please complete the form below for a quote</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="https://formspree.io/f/mqkgrgwl" method="post">
+              <div class="mb-3">
+                <input name="name" type="text" class="form-control mb-3" placeholder="Name">
+                <input name="telnumber" type="tel" class="form-control mb-3" placeholder="Phone number">
+                <input name="email" type="email" class="form-control mb-3" placeholder="name@example.com">
+                <input name="cartype" type="text" class="form-control mb-3" placeholder="Car make and model">
+                <label for="service-package">Select from our packages</label>
+                <select name="service-package" id="service-package" class=" form-select px-3 py-2 ">
+                  <option selected="selected" value="regular">Regular wash</option>
+                  <option value="deep">Deep clean</option>
+                  <option value="maintenance">Maintenance</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Let us know if you have any questions or any
+                  specifics that you require.</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
           </div>
         </div>
       </div>
