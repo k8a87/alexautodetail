@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navTop" data-bs-offset="100">
@@ -59,8 +60,9 @@
           <li class="nav-item">
             <a class="nav-link clickToClose" href="#contact">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link clickToClose" href="#">Offers and Updates</a>
+          <li class="nav-item ms-3">
+            <button class="nav-link clickToClose btn btn-primary text-white" data-bs-toggle="modal"
+              data-bs-target="#quoteModal">Get a quote</button>
           </li>
         </ul>
       </div>
@@ -69,9 +71,10 @@
   <section id="home" class="bg-black">
     <div class="container-md ">
       <div class="row align-items-center justify-content-center text-center text-md-start vh-100">
-        <div class="col-md-5 text-primary d-none d-md-block ps-5">
+        <div class="col-md-5 text-primary d-none d-md-block ps-5" data-aos="fade-up" data-aos-offset="300"
+          data-aos-duration="2000" data-aos-easing="ease-in-sine">
           <h1 class="title">Alex Auto Detailing</h1>
-          <p class="lead "> PROFESSIONAL CAR DETAILING SERVICES </p>
+          <p class="lead"> PROFESSIONAL CAR DETAILING SERVICES </p>
         </div>
         <div class="col-md-7 col-lg-7">
           <img src="/images/alexautologo.png" class="img-fluid py-5 " alt="" />
@@ -138,10 +141,10 @@
     <!-- First card -->
     <section id="regular">
       <div class="container-sm">
-        <div class="card shadow mb-5">
+        <div class="card shadow mb-5 ">
           <div class="card-header text-center bg-primary bg-gradient text-light py-3"> Regular wash </div>
           <div class="row justify-content-center align-items-end bg-light">
-            <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5">
+            <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5" data-aos="fade-right">
               <div class="card-body ps-md-5">
                 <h5 class="card-title">Standard clean inside and out</h5>
                 <ul class="card-text pt-3 pt-lg-4">
@@ -157,17 +160,20 @@
                 </ul>
               </div>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-3x"></i>
               <p>Small / 1hr 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£65</span>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-4x"></i>
               <p>Medium / 2hrs</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£75</span>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-5x"></i>
               <p>SUV / 2hrs 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£85</span>
@@ -182,7 +188,7 @@
         <div class="card shadow mb-5">
           <div class="card-header text-center bg-primary bg-gradient text-light py-3"> Deep clean </div>
           <div class="row justify-content-center align-items-baseline bg-light">
-            <div class="col-10 col-md-6 py-3 ps-md-5">
+            <div class="col-10 col-md-6 py-3 ps-md-5" data-aos="fade-right">
               <div class="card-body">
                 <h5 class="card-title">Full deep clean inside and out</h5>
                 <ul class="card-text pt-3">
@@ -197,7 +203,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-10 col-md-6">
+            <div class="col-10 col-md-6" data-aos="fade-left">
               <div class="card-body pb-5">
                 <ul class="card-t ext ">
                   <p>Exterior</p>
@@ -217,26 +223,23 @@
                 </ul>
               </div>
             </div>
-            <div class="col-10 col-md-4 text-primary text-center py-3 border-bottom">
+            <div class="col-10 col-md-4 text-primary text-center py-3 border-bottom" data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-3x"></i>
               <p>Small / 2hr 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£120</span>
             </div>
-            <div class="col-10 col-md-4 text-primary text-center py-3  border-bottom">
+            <div class="col-10 col-md-4 text-primary text-center py-3  border-bottom" data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-4x"></i>
               <p>Medium / 3hrs 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£140</span>
             </div>
-            <div class="col-10 col-md-4 text-primary text-center py-3  border-bottom">
+            <div class="col-10 col-md-4 text-primary text-center py-3  border-bottom" data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-5x"></i>
               <p>SUV / 3-5hrs</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£180</span>
             </div>
           </div>
         </div>
-      </div>
-      </div>
-      </div>
       </div>
     </section>
     <!-- Maintenance card -->
@@ -246,7 +249,7 @@
           <div class="card-header text-center bg-primary bg-gradient text-light py-3"> Maintenance wash <br /> (for
             customers who have already received our full deep clean) </div>
           <div class="row justify-content-center align-items-end bg-light">
-            <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5">
+            <div class="col-10 col-md-6 col-lg-5 py-3 ps-md-5" data-aos="fade-right">
               <div class="card-body ps-md-5">
                 <h5 class="card-title">Everything from the regular wash plus:</h5>
                 <ul class="card-text pt-3 pt-lg-4">
@@ -262,17 +265,20 @@
                 </ul>
               </div>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-3x"></i>
               <p>Small / 1hr 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£65</span>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-4x"></i>
               <p>Medium / 2hrs</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£75</span>
             </div>
-            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5">
+            <div class="col-10 col-md-2 text-primary text-center border-bottom py-3 py-lg-0 px-md-2 mb-md-5"
+              data-aos="fade-up">
               <i class="fa fa-solid fa-car fa-5x"></i>
               <p>SUV / 2hrs 30mins</p>
               <span class="mb-md-5 badge bg-primary rounded-pill" style="font-size: 1rem">£85</span>
@@ -283,17 +289,17 @@
     </section>
   </section>
   <section id="gallery">
-    <div class="text-center text-light bg-primary bg-gradient pt-3 pb-2 ">
+    <div class="text-center text-light bg-primary bg-gradient pt-3 pb-5 ">
       <h2>Gallery</h2>
       <p class="lead">You can also find us on social media!</p>
-      <div>
-        <a href="https://www.facebook.com/alexautodetailing27" target="_blank" rel="noopener noreferrer"><i
-            class="bi bi-facebook link-light" style="font-size: 2rem"></i></a>
+      <div data-aos="flip-left" data-aos-duration="1500">
+        <a href="https://www.facebook.com/alexautodetailing27" target="_blank" rel="noopener noreferrer "><i
+            class="bi bi-facebook link-light btn btn-primary px-5 mx-5 shadow " style="font-size: 2rem"></i></a>
         <a href="https://www.instagram.com/carcare4life/ " target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram px-3 link-light" style="font-size: 2rem"></i>
+          <i class="bi bi-instagram px-3 link-light btn btn-primary px-5 mx-5 shadow" style="font-size: 2rem"></i>
         </a>
         <a href="https://www.tiktok.com/@alexcardetailing?lang=en" target="_blank" rel="noopener noreferrer"><i
-            class="bi bi-tiktok link-light" style="font-size: 2rem"></i></a>
+            class="bi bi-tiktok link-light btn btn-primary px-5 mx-5 shadow" style="font-size: 2rem"></i></a>
       </div>
     </div>
     <div class="container py-4">
@@ -408,7 +414,7 @@
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-lg btn-outline-primary my-3" data-bs-toggle="modal"
               data-bs-target="#quoteModal"> Request a quote </button>
-            <p class="">
+            <p>
               <span> Or send us an e-mail <br />
                 <b>cardetailing@ <br /> alexautodetailing.co.uk</b>
               </span>
@@ -445,10 +451,10 @@
           <div class="modal-body">
             <form action="https://formspree.io/f/mqkgrgwl" method="post">
               <div class="mb-3">
-                <input name="name" type="text" class="form-control mb-3" placeholder="Name">
-                <input name="Phone number" type="tel" class="form-control mb-3" placeholder="Phone number">
-                <input name="email" type="email" class="form-control mb-3" placeholder="name@example.com">
-                <input name="cartype" type="text" class="form-control mb-3" placeholder="Car make and model">
+                <input name="name" type="text" class="form-control mb-3" placeholder="Name" required>
+                <input name="Phone number" type="tel" class="form-control mb-3" placeholder="Phone number" required>
+                <input name="email" type="email" class="form-control mb-3" placeholder="name@example.com" required>
+                <input name="cartype" type="text" class="form-control mb-3" placeholder="Car make and model" required>
                 <label for="service-package">Select from our packages</label>
                 <select name="package" id="service-package" class=" form-select px-3 py-2 ">
                   <option selected="selected" value="regular">Regular wash</option>
@@ -463,7 +469,7 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
@@ -473,6 +479,10 @@
   </section>
   <script src="https://kit.fontawesome.com/e25f9f83a1.js" crossorigin="anonymous"></script>
   <script type="module" src="./assets/js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
