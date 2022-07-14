@@ -1,19 +1,21 @@
 $primary: #7d2f97;
 
+// For the updates and news flash cards
 .overlay {
   margin-top: -25px;
 }
 
+// To set a tiny margin at top of page
 section {
   scroll-margin-top: 5px;
 }
 
+// Font
 .title {
   font-family: "Kanit", sans-serif;
 }
 
 // hide navbar
-
 .nav--hidden {
   transform: translateY(-500px);
 }
@@ -21,20 +23,18 @@ section {
   transition: transform 0.5s ease-in-out;
 }
 
-// Modify active colour
-
+// Modify Navbar active colour
 .nav-link.active,
 .nav-link:hover {
   color: #e38eff !important;
 }
 
-// Modify link colour
-
+// Modify Navbar link colour
 a.nav-link {
   color: #aa68c0;
 }
-// Modify Nav burger
 
+// Modify Nav burger
 .navbar-toggler {
   width: 40px;
   height: 20px;
@@ -43,7 +43,6 @@ a.nav-link {
 }
 
 // remove bootstrap Nav icon properties
-
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -54,14 +53,12 @@ a.nav-link {
 }
 
 // Make new burger
-
 .navbar-toggler span {
   margin: 0;
   padding: 0;
 }
 
 // create bars for new burger
-
 .toggler-icon {
   display: block;
   position: absolute;
@@ -79,8 +76,7 @@ a.nav-link {
   margin-top: 0px;
 }
 
-// When navigation is clicked
-
+// State when navigation is clicked
 .navbar-toggler .top-bar {
   margin-top: 0px;
   transform: rotate(135deg);
@@ -96,8 +92,7 @@ a.nav-link {
   transform: rotate(-135deg);
 }
 
-// state when navbar is collapsed
-
+// State when navbar is collapsed
 .navbar-toggler.collapsed .top-bar {
   margin-top: -25px;
   transform: rotate(0deg);
@@ -114,7 +109,6 @@ a.nav-link {
 }
 
 // colour of 3 lines
-
 .navbar-toggler.collapsed .toggler-icon {
   background: linear-gradient(
     90deg,
@@ -122,6 +116,8 @@ a.nav-link {
     rgba(67, 45, 74, 1) 100%
   );
 }
+
+// Scale up the contact cards on hover
 .contact-card {
   transition: 0.25s ease-in-out;
 }
