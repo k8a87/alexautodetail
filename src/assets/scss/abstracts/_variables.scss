@@ -15,11 +15,12 @@ section {
   font-family: "Kanit", sans-serif;
 }
 
-// Scale up the contact cards on hover
-.contact-card {
+// Custom class to scale up the contact cards and Social media icons on hover
+.scale-up {
+  cursor: pointer;
   transition: 0.25s ease-in-out;
 }
 
-.contact-card:hover {
+.scale-up:hover {
   transform: scale(1.05);
 }
