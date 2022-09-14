@@ -468,10 +468,13 @@
           <div class="modal-body">
             <form action="https://formspree.io/f/mrgjwage" method="post">
               <div class="mb-3">
-                <input name="name" type="text" class="form-control mb-3" placeholder="Name" required>
-                <input name="Phone number" type="tel" class="form-control mb-3" placeholder="Phone number" required>
-                <input name="email" type="email" class="form-control mb-3" placeholder="name@example.com" required>
-                <input name="cartype" type="text" class="form-control mb-3" placeholder="Car make and model" required>
+                <input name="name" type="text" class="form-control mb-3" placeholder="Name" maxlength="50" required>
+                <input name="Phone number" type="tel" class="form-control mb-3" placeholder="Phone number"
+                  maxlength="20" required>
+                <input name="email" type="email" class="form-control mb-3" placeholder="name@example.com"
+                  maxlength="100" required>
+                <input name="cartype" type="text" class="form-control mb-3" placeholder="Car make and model"
+                  maxlength="30" required>
                 <label for="service-package">Select from our packages</label>
                 <select name="package" id="service-package" class=" form-select px-3 py-2 ">
                   <option selected="selected" value="regular">Regular wash</option>
@@ -482,7 +485,8 @@
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Let us know if you have any questions or any
                   specifics that you require.</label>
-                <textarea name="comments" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea name="comments" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  maxlength="200"></textarea>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
