@@ -1,0 +1,15 @@
+.social-icons {
+  position: fixed;
+  bottom: 15%;
+  left: 50;
+  display: flex;
+  flex-direction: column;
+
+  i {
+    color: #c005ff;
+    margin: 10px 0;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
